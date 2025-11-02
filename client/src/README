@@ -1,0 +1,9 @@
+<div id="nav">
+  <NavBar />
+</div>
+<div id="content">
+<Acceuil />
+<Services />
+<ProduitsAcceuil />
+<Offres />
+</div>

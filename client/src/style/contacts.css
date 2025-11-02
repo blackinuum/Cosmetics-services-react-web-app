@@ -1,0 +1,29 @@
+@import url("../App.css");
+
+#contacts__container{
+    height : 6%;
+    width : 100%;
+    background-color: rgb(32, 32, 32);
+    color : white;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+#contacts__container ul{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    gap : 10%;
+    width : 100%;
+    
+}
+#contacts__container ul li{
+    display : flex;
+    align-items : center;
+    gap : 6px;
+    font-size : 18px;
+}
+.contacts-icon{
+    width : 15px;
+    height : 15px;
+}

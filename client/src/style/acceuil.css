@@ -1,0 +1,190 @@
+@import url("../App.css");
+
+#acceuil__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#acceuil__main {
+    width: 100%;
+    flex: 90%;
+    display: flex;
+    background-color: white;
+}
+
+#skin-care__container {
+    content: "";
+    flex: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+#acceuil_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#acceuil__welcoming {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#welcoming-BG {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: fill;
+    top: 0;
+    z-index: 0;
+}
+
+#welcoming__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 27px;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.747);
+}
+
+#welcoming__content #logo {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 4%;
+}
+
+#banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+#welcoming__content h2 {
+    margin-top : 7%;
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 800;
+    overflow: hidden;
+    font-style: italic;
+    font-family: var(--title-font);
+}
+
+#welcoming__content p {
+    font-size: 20px;
+    width: 80%;
+    font-family: var(--content-font);
+    text-align: justify;
+    line-height: 37px;
+    font-weight :500;
+}
+
+#acceuil__footer {
+    content: "";
+    width: 100%;
+    flex: 2%;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#acceuil__footer div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+#acceuil__footer div ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 25px;
+}
+
+.icones-reseaux-sociaux {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform .25s ease-in;
+}
+
+.icones-reseaux-sociaux:hover {
+    transform: scale(1.1);
+}
+
+#buttonContainer {
+    width: 80%;
+    height: 7%;
+    position: relative;
+}
+
+#welcoming__content #buttonContainer button {
+    width: 39%;
+    height: 100%;
+    right: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    background-color: #800020;
+    border : none;
+    color : white;
+    font-weight : 900;
+    font-size : 21px;
+    border-radius : 3px;
+    font-family : var(--buttons-font);
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    gap : 11px;
+    transition : background-color .3s ease-in;
+}
+#welcoming__content #buttonContainer button:hover{
+    background-color: #b91616;
+}
+
+.text__typing {
+    position: relative;
+    color: #b91616;
+}
+
+.text__typing::before {
+    content: "";
+    width: 102%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    border-left : 3px solid rgb(172, 8, 8);
+    left: 0;
+    animation: typing 3s infinite ease-in-out;
+}
+
+@keyframes typing {
+    100% {
+        transform: translateX(100%);
+    }
+}

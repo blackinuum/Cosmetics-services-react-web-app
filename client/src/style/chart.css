@@ -1,0 +1,127 @@
+@import url("../App.css");
+
+@keyframes showChart {
+    0%{
+        transform : translateY(-100%);
+    }
+    100%{
+        transform : translateY(0);
+    }
+}
+
+#chart__container {
+    width: 45%;
+    height: auto;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.781);
+    box-shadow: 0 5px 15px rgba(128, 128, 128, 0.726);
+    z-index: 0;
+    right: .4%;
+    backdrop-filter: blur(75px);
+    border-radius: 0 0 8px 8px;
+    animation : showChart .25s ease-in;
+}
+
+#chart__container table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#chart__container table th {
+    background-color: #8d092abe;
+    padding: 15px;
+    color: white;
+    font-family: var(--title-font);
+    font-size: 16px;
+}
+
+#chart__container table td {
+    padding: 15px;
+    border-collapse: collapse;
+    font-weight: 850;
+    font-family: var(--content-font);
+    color : rgb(85, 85, 85);
+
+}
+
+#chart__container table tr:nth-child(even) {
+    background-color: #8d092a34;
+}
+
+#price__footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 3%;
+}
+
+#price__footer h5 {
+    padding: 15px;
+    font-size: 20px;
+    color: #8d092abe;
+}
+
+.panier__icon {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    transition: color ;
+}
+
+#rv {
+    padding-bottom : 4px;
+    width: 35%;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    background-color: #800020;
+    border: none;
+    border-radius: 3px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .2s ease-in;
+}
+.agenda{
+    color: white;
+    width : 18px;
+    height : 18px;
+    position : relative;
+    top : 1%;
+    left : 4%;
+}
+#rv h5 {
+    color: white;
+    font-family: var(--buttons-font);
+    font-weight: 900;
+    font-size: 21px;
+}
+
+#rv:hover {
+    background-color: #b91616;
+}
+
+.panier__icon:hover {
+    color: #a51035be;
+}
+
+#close__list {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.closing__icon {
+    color: #a51035be;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.closing__icon:hover {
+    color: #f70944be;
+}

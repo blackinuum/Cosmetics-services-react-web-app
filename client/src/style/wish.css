@@ -1,0 +1,55 @@
+@import url("../App.css");
+
+#wish-list__container{
+    width : 45%;
+    height : auto;
+    background-color: rgba(255, 255, 255, 0.781);
+    box-shadow: 0 5px 15px rgba(128, 128, 128, 0.726);
+    backdrop-filter: blur(75px);
+    border-radius: 0 0 8px 8px;
+    z-index : 0;
+    position : absolute;
+    right : .4%;
+    animation : showChart .25s ease-in;
+}
+#wish-list__container table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#wish-list__container table th {
+    background-color: #8d092abe;
+    padding: 15px;
+    color: white;
+    font-family: var(--title-font);
+    font-size: 16px;
+}
+
+#wish-list__container table td {
+    padding: 15px;
+    border-collapse: collapse;
+    font-weight: 850;
+    font-family: var(--content-font);
+    color : rgb(85, 85, 85);
+
+}
+
+#wish-list__container table tr:nth-child(even) {
+    background-color: #8d092a34;
+}
+.unlike{
+    width : 25px;
+    height : 25px;
+}
+.cart{
+    width : 30px;
+    height : 30px;
+}
+.wishList__icon{
+    cursor : pointer;
+    transition : color ;
+}
+.wishList__icon:hover{
+    color: #a51035be;
+}

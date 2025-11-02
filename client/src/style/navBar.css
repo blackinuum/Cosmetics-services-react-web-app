@@ -1,0 +1,212 @@
+@import url("../App.css");
+
+#navContainer{
+    width : 100%;
+    height : 100%;
+    display : flex;
+    align-items : center;
+    justify-content: space-between;
+    gap : 160px;
+    background-color: rgb(32, 32, 32);
+    color : white;
+    position : relative;
+    z-index : 1;
+}
+#logo__container{
+    padding : 15px;
+    position : relative;
+    left : 1.5%;
+    flex : 18%;
+}
+#logo__container h3{
+    cursor : pointer;
+    font-family : var(--logo-font);
+    font-size : 25px;
+}
+#logo__container h3::before{
+    content : "";
+    width : 11px;
+    height : 11px;
+    background-color: white;
+    left : 0;
+    top : 50%;
+    position : absolute;
+    border-radius : 50%;
+    transform: translate(5%,-50%);
+}
+
+#navigation__container{
+flex : 62%;
+}
+#navigation__container ul{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    gap : 50px;
+}
+#navigation__container ul li{
+    color : whitesmoke;
+    font-family : var(--handwrite-font);
+    font-size : 19px;
+    cursor : pointer;
+    transition : color .75s ease-in,transform .25s ease-in-out;
+}
+#navigation__container ul li:hover{
+    transform : translateY(-1.75px);
+    font-weight : 600;
+    color : white;
+}
+#buttons__container{
+    display : flex;
+    gap : 7px;
+    align-items: center;
+    height : 100%;
+    position : relative;
+    right : 5px;
+    cursor : pointer;
+    flex : 20%;
+}
+#user__interact-container{
+    height : 100%;
+    position : relative;
+    right : 5px;
+    flex : 20%;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+}
+#user__interact-container ul{
+    display : flex;
+    gap : 13%;
+    align-items: center;
+    position : relative;
+    width : 100%;
+    height : 100%;
+}
+#user__interact-container ul li{
+    color : whitesmoke;
+    transition : transform .4s ease-in-out , color .4s ease-in-out;
+}
+#user__interact-container ul li:not(:last-child):hover{
+    color : white;
+}
+#user__interact-container ul li:last-child{
+    position : absolute;
+    right : 1.5%;
+}
+#user__interact-container ul li:last-child:hover{
+    transform : scale(1.05);
+}
+.list{
+    position : relative;
+    height : 80%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-action__icon{
+    cursor : pointer;
+}
+.list-action__icon.list{
+    position : relative;
+}
+.count{
+    width : auto;
+    height : auto;
+    position : absolute;
+    top : 0;
+    right : -20%;
+    font-size : 11px;
+    font-weight : 700;
+    color : #fd4573;
+    font-family: var(--title-font);
+}
+.count:not(.wish){
+    top : 12%;
+}
+.count.wish{
+    position : absolute;
+    top : 11%;
+    right : -40%;
+}
+@keyframes added{
+    0%{
+        transform : translatey(0);
+    }
+    25%{
+        transform : translatey(-30%);
+    }
+    50%{
+        transform : translatey(0);
+        color : white;
+    }
+    75%{
+        transform : translatey(-10%);
+    }
+    100%{
+        transform : translatey(0);
+        color : #cf2952;
+    }
+}
+.list-action__icon:not(.heart){
+    width : 25px;
+    height : 25px;
+}
+.list-action__icon.heart{
+    width : 20px;
+    height : 20px;
+}
+.navButtons{
+    width : 150px;
+    text-align : center;
+    padding : 4px 5px;
+    border-radius : 5px;
+    height : 40%;
+    transition : background-color .25s ease-in;
+}
+.lock{
+    width : 18px;
+    height : 18px;
+    position : relative;
+    top : 3%;
+}
+#auth{
+    display : flex;
+    align-items : center;
+    justify-content: center ;
+    gap : 5px;
+    background-color: #800020;
+    width : 80%;
+    height : 50%;
+    font-size : 18px;
+    letter-spacing: 1px;
+    font-family : var(--buttons-font);
+}
+
+.icon_clicked{
+    color : #f893ac;
+}
+@keyframes item_added{
+    0%{
+        transform : translateY(0) scale(1);
+    }
+    25%{
+        transform : translateY(-65%);
+    }
+    50%{
+        color : white;
+        transform : translateY(0) scale(1.4);
+    }
+    75%{
+        transform : translateY(-35%);
+    }
+    100%{
+        transform : translateY(0) scale(1);
+    }
+}
+.item_added{
+    animation: item_added .75s ease-in;
+}
+.activeLink{
+    color : red;
+}
